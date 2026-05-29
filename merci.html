@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Merci — Les Éditions du Mécène</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bordeaux:#6B1A1A;
+  --bordeaux-deep:#4A0E0E;
+  --or:#C9A84C;
+  --or-light:#E2C97E;
+  --creme:#F7F2E8;
+}
+body{
+  font-family:'Jost',sans-serif;
+  background:var(--bordeaux-deep);
+  color:var(--creme);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 24px;
+  position:relative;
+  overflow:hidden;
+}
+body::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse 60% 60% at 50% 40%, rgba(201,168,76,0.09) 0%, transparent 70%);
+  pointer-events:none;
+}
+.ornement{
+  font-family:'Cormorant Garamond',serif;
+  font-size:48px;
+  color:var(--or);
+  opacity:0.4;
+  line-height:1;
+  margin-bottom:32px;
+  letter-spacing:8px;
+}
+.label{
+  font-family:'Jost',sans-serif;
+  font-size:11px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--or);
+  margin-bottom:24px;
+}
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(32px,6vw,56px);
+  font-weight:300;
+  line-height:1.2;
+  color:var(--creme);
+  margin-bottom:24px;
+}
+h1 em{
+  font-style:italic;
+  color:var(--or-light);
+}
+p{
+  font-family:'Jost',sans-serif;
+  font-size:16px;
+  font-weight:300;
+  color:rgba(247,242,232,0.7);
+  max-width:480px;
+  line-height:1.8;
+  margin-bottom:48px;
+}
+.cta{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  background:var(--or);
+  color:var(--bordeaux-deep);
+  font-family:'Jost',sans-serif;
+  font-weight:500;
+  font-size:12px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  padding:18px 40px;
+  text-decoration:none;
+  transition:all .3s;
+}
+.cta:hover{
+  background:var(--or-light);
+  transform:translateY(-2px);
+}
+.cta svg{width:14px;height:14px;transition:transform .3s}
+.cta:hover svg{transform:translateX(4px)}
+.retour{
+  margin-top:24px;
+  font-size:12px;
+  color:rgba(247,242,232,0.35);
+  letter-spacing:1px;
+}
+.retour a{
+  color:rgba(201,168,76,0.6);
+  text-decoration:none;
+}
+.retour a:hover{color:var(--or)}
+</style>
+</head>
+<body>
+  <div class="ornement">✦</div>
+  <p class="label">Message reçu</p>
+  <h1>Merci pour<br>votre <em>intérêt</em></h1>
+  <p>
+    Patrice de Moncan a bien reçu votre message et vous répondra dans les meilleurs délais.<br>
+    En attendant, découvrez l'univers des Éditions du Mécène.
+  </p>
+  <a class="cta" href="https://www.les-editions-du-mecene.fr/" target="_blank" rel="noopener">
+    Découvrir les Éditions du Mécène
+    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M3 7.5h9M8 3.5l4 4-4 4"/>
+    </svg>
+  </a>
+  <p class="retour">
+    <a href="/">← Retour à la présentation du projet</a>
+  </p>
+</body>
+</html>
